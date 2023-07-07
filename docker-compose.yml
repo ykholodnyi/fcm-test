@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  fcm-testing:
+    build:
+      context: .
+    container_name: fcm-testing
+    hostname: analytics
+    env_file:
+      - .env
+    volumes:
+      - ./:/data:rw
